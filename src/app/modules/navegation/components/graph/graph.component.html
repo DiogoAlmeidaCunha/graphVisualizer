@@ -1,0 +1,40 @@
+<div class="grid-container">
+
+        <!-- Fundos -->
+        <div class="row col-mg-12" >
+          <mat-card class="col-md-9 m-3 mat-elevation-z3">
+            <button mat-button (click)="handleClick('[REQUEST] # GET_FUNDOS')">Get!</button> 
+            
+            <!-- GRAPH D3 Content -->
+            <mat-card-content>
+               
+            </mat-card-content>
+          </mat-card>
+    
+          <!-- Filtros  -->
+          <mat-card class="col-md-2 m-3 mat-elevation-z3">
+              <mat-card-title> Filtros </mat-card-title>
+              <mat-card-subtitle>Descricao arquivista a fazer relativa</mat-card-subtitle>
+    
+              <mat-list role="list">
+                  <mat-list-item role="listitem"> <mat-slide-toggle color="none" checked="checked" [disabled]="enable">CIDOC</mat-slide-toggle> </mat-list-item>
+                  <mat-list-item role="listitem"> <mat-slide-toggle color="none" checked="checked" [disabled]="enable">Hierarquico</mat-slide-toggle> </mat-list-item>
+                  <mat-list-item role="listitem"> <mat-slide-toggle color="none" checked="false" [disabled]="enable" >Unidades Simples</mat-slide-toggle> </mat-list-item>
+                  <mat-list-item role="listitem"> <mat-slide-toggle color="none" checked="false" [disabled]="enable">Unidades Compostas</mat-slide-toggle> </mat-list-item>
+                  <mat-list-item role="listitem"> <mat-slide-toggle color="none" checked="false" [disabled]="enable">Series Simples</mat-slide-toggle> </mat-list-item>
+                  <mat-list-item role="listitem"> <mat-slide-toggle color="none" checked="false" [disabled]="enable">Sub Series</mat-slide-toggle> </mat-list-item>
+                </mat-list>
+              
+              <div>Quantidade</div>
+              <mat-slider
+                thumbLabel
+                [displayWith]="formatLabel"
+                tickInterval="1"
+                min="1"
+                max="20">
+              </mat-slider>
+    
+            </mat-card>
+            
+          </div>
+          </div>

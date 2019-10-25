@@ -20,9 +20,10 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatTableModule} from '@angular/material/table';
+import { GraphComponent } from './components/graph/graph.component';
 
 @NgModule({
-  declarations: [NavComponent, DashboardComponent, DragdropComponent],
+  declarations: [NavComponent, DashboardComponent, DragdropComponent, GraphComponent],
   imports: [
     CommonModule,
     NavegationRoutingModule,
