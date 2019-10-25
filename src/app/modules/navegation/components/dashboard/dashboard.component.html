@@ -1,7 +1,7 @@
 <div class="grid-container">
   
-  <div class="row col-mg-12" >
-    <mat-card class="col-md-9 m-3">
+  <div class="row col-mg-12 " >
+    <mat-card class="col-md-8 m-3 mat-elevation-z3">
       <mat-card-title> Versao 1 </mat-card-title>
       <mat-card-subtitle>Descricao arquivista a fazer relativa</mat-card-subtitle>
       <mat-card-content>
@@ -10,25 +10,46 @@
         <mat-slider></mat-slider>
       </mat-card-content>
     </mat-card>
-    <mat-card class="col-md-2 m-3">
-      <mat-card-title> Versao 2 </mat-card-title>
-      <mat-card-subtitle>Descricao arquivista a fazer relativa</mat-card-subtitle>
-      <mat-card-content>
-        <mat-slider></mat-slider>
-      </mat-card-content>
+    <mat-card class="col-md-3 example-card m-3 mat-elevation-z3">
+        <mat-card-header >
+          <div mat-card-avatar class="example-header-image "></div>
+          <mat-card-title>{{person.nome}} Almeida Cunha</mat-card-title>
+          <mat-card-subtitle >from feup</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://1.bp.blogspot.com/---rezzVowB0/XY9FRND80iI/AAAAAAAAL7U/JQqGnhaUXb0CwO-rPhL8pdLGXGIp5b1uACLcBGAsYHQ/s1600/GANTamoreiras_Photo_%25C2%25A9LouieThain_LAT_6714_Diogo%2BCunha.jpg" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            <div class="row col-md-12 ">
+              <div class="col-md-4  ">
+                  <div color="accent" class="row  justify-content-center">Funcao</div>
+                  <div class="row  justify-content-center" ><h5>{{person.nome}}</h5> </div>
+              </div>
+              <div class="col-md-4  ">
+                  <div color="accent" class="row  justify-content-center">Funcao</div>
+                  <div class="row  justify-content-center" ><h5> {{person.idade}}</h5> </div>
+              </div>
+              <div class="col-md-4  ">
+                  <div color="accent" class="row  justify-content-center">Funcao</div>
+                  <div class="row  justify-content-center" ><h5> {{person.tipo}}</h5></div>
+              </div>
+            </div>
+        </mat-card-content>
+        <mat-card-actions class="d-flex justify-content-center">
+          <button mat-button color="primary">LIKE</button>
+          <button mat-button  color="primary" >SHARE</button>
+        </mat-card-actions>
     </mat-card>
 
-    <mat-card class="col-md-2 m-3">
+    <mat-card class="col-md-2 m-3 mat-elevation-z3">
       <mat-card-title> Versao 2 </mat-card-title>
       <mat-card-subtitle>Descricao arquivista a fazer relativa</mat-card-subtitle>
     </mat-card>
 
-    <mat-card class="col-md-9 m-3">
+    <mat-card class="col-md-9 m-3 mat-elevation-z3">
       <mat-card-title> Tarefas </mat-card-title>
       <mat-card-subtitle>Progressão ao Longo do Tempo</mat-card-subtitle>
 
       <!-- Progressive Bar -->
-      <mat-progress-bar class="mb-5" mode="determinate" value="70"></mat-progress-bar>
+      <mat-progress-bar class="mb-5" color="accent" mode="determinate" value="70"></mat-progress-bar>
 
       <mat-card-content class="text-left">
         <div class="container ">

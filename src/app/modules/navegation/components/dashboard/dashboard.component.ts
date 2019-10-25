@@ -3,12 +3,32 @@ import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 
+class person{
+  nome:string;
+  idade: number;
+  tipo: string;
+
+  constructor(nome: string, idade: number, tipo: string){
+    this.nome=nome;
+    this.idade=idade;
+    this.tipo=tipo;
+  }
+
+  public print(){
+    console.log("DIOGO, 23");
+  }
+}
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
+
 export class DashboardComponent {
+
+  person = new person("Diogo",23,"Arquivista");
+
   /** Based on the screen size, switch from standard to one column per row */
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {
