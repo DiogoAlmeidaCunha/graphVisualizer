@@ -1,27 +1,33 @@
-# AppGraph
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.13.
+## GraphVis
+Visualization of Graph manipulation and Edition. In computer systems today, a wide variety of tasks related to ontology visualization and graph drawing, have been studied and gained a remarkable attention. In this project, we address the use of large ontologies and web-graphs for visualization and interaction techniques for archivists. In general, ontologies represent entities, ideas and events, with all their interdependent properties and relations. They can help to overview all subject domains and give them a better understand for current knowledge [3] and organize information. This type of technique, which describes real world entities and their interrelations, has several characteristics that make it useful to explore the
+existing information and retrieve new knowledge. For archivists, ontologies play a great role in
+presenting the results achieved and helping science to move further. But the tools for this task, in
+most cases, requires a certain level of technical experience. It is intended to have two different prototypes that will provide professional users, the archivist, and regular users to interact with the system. Archivist will be able to interact and manipulate the ontology data and directly create interlinked descriptions of entities, documents/situations or abstract relations. Furthermore, it is expected to have a friendly user interface with two different purposes. Which we’ll be carefully study and provide users a good navigation GRAPH experience by testing the prototype with real case scenarios.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Based on
+Angular 6+, TypeScript, css and Bootstrap 4
 
-## Code scaffolding
+## Demo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[Live Demo](...)
 
-## Build
+## Getting started and Packages
+```
+git clone https://github.com/diogoalmeidacunha/graphVisualizer
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+add @angular/material
 
-## Running unit tests
+npm install bootstrap
+```
+## Get Ready
+```
+[1]   npm install
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[2]   ng serve 
+or
+[2.2] npm run ng serve
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+localhost:4200
+```
