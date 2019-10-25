@@ -16,6 +16,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { DragdropComponent } from './components/dragdrop/dragdrop.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import {MatSliderModule} from '@angular/material/slider';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import {MatSliderModule} from '@angular/material/slider';
     MatCardModule,
     MatMenuModule,
     DragDropModule,
-    MatSliderModule
+    MatSliderModule,
+    MatProgressBarModule
   ]
 })
 export class NavegationModule { }

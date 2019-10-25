@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
+import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-dashboard',
@@ -30,4 +31,26 @@ export class DashboardComponent {
   );
 
   constructor(private breakpointObserver: BreakpointObserver) {}
+
+  todo = [
+    'Adicionar Arquivo Lorvão ao Fundo RRE1233R22',
+    'Melhorar Fundo RRE1233R22',
+  ];
+
+  done = [
+    'Digitalizar novas unidades do documento Ovar',
+    'Continuar a escrever discrição ref RE231424TTT',
+    'Adicionar arquivo digitalizado',
+  ];
+
+  drop(event: CdkDragDrop<string[]>) {
+    if (event.previousContainer === event.container) {
+      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+    } else {
+      transferArrayItem(event.previousContainer.data,
+          event.container.data,
+          event.previousIndex,
+          event.currentIndex);
+    }
+  }
 }
