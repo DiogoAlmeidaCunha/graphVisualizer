@@ -57,4 +57,10 @@
     opacity: 0;
   }
   
-  
+  svg {
+    fill:red;
+}
+
+#chart{
+  background-color: red;
+}

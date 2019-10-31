@@ -1,13 +1,11 @@
 <div class="grid-container">
-
         <!-- Fundos -->
         <div class="row col-mg-12" >
-          <mat-card class="col-md-9 m-3 mat-elevation-z3">
-            <button mat-button (click)="handleClick('[REQUEST] # GET_FUNDOS')">Get!</button> 
-            
+          <mat-card class="col-md-9 m-3 mat-elevation-z3"> 
             <!-- GRAPH D3 Content -->
             <mat-card-content>
-               
+              <button class="d-flex flex-row-reverse" style="background-color: #ff4081; color: white" mat-button (click)="handleGraph('[REQUEST] # GET_GRAPH')">Get!</button> 
+              
             </mat-card-content>
           </mat-card>
     
@@ -34,7 +32,19 @@
                 max="20">
               </mat-slider>
     
-            </mat-card>
+          </mat-card>
+
+          <!-- Filtros  -->
+          <mat-card class="col-md-6 m-3 mat-elevation-z3">
+              <mat-card-title> Filtros </mat-card-title>
+              <mat-card-subtitle>Descricao arquivista a fazer relativa</mat-card-subtitle>
+    
+              <mat-card-content>
+                  <button class="mb-4" style="background-color: #ff4081; color: white" mat-button (click)="handleClick('[REQUEST] # GET_CHART')">Get!</button> 
+                  <chartd3 [data]="json | async"></chartd3>
+                </mat-card-content>
+    
+          </mat-card>
             
-          </div>
-          </div>
+    </div>
+  </div>

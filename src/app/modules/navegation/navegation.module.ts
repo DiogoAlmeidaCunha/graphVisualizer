@@ -21,9 +21,22 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatTableModule} from '@angular/material/table';
 import { GraphComponent } from './components/graph/graph.component';
+import { Chartd3Component } from './components/graph/chartd3/chartd3.component';
+import { Graphd3Component } from './components/graph/graphd3/graphd3.component';
+  
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
-  declarations: [NavComponent, DashboardComponent, DragdropComponent, GraphComponent],
+  declarations: [
+    NavComponent, 
+    DashboardComponent, 
+    DragdropComponent, 
+    GraphComponent,
+    Chartd3Component,
+    Graphd3Component
+  ],
+  
   imports: [
     CommonModule,
     NavegationRoutingModule,
@@ -41,7 +54,8 @@ import { GraphComponent } from './components/graph/graph.component';
     MatProgressBarModule,
     MatSlideToggleModule,
     MatTreeModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule
   ]
 })
 export class NavegationModule { }

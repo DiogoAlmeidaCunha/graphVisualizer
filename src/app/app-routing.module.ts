@@ -14,9 +14,14 @@ const routes: Routes = [
 		loadChildren: 'src/app/modules/navegation/navegation.module#NavegationModule'
 	},
 	{
+		path: 'home2',
+		loadChildren: 'src/app/modules/navegation/navegation.module#NavegationModule'
+	},
+	{
 		path:'**',
 		component: PageNotFoundComponent
 	}
+
 ];
 
 @NgModule({
